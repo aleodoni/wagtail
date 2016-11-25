@@ -45,14 +45,18 @@ WAGTAIL_APPS = [
     'wagtail.wagtailcore',
 ]
 
-MISC_APPS = [
+LOCAL_APPS = [
     'telefonia_wagtail.home',
-    'telefonia_wagtail.search',
+    'telefonia_wagtail.search',    
+]
+
+THIRD_PARTY_APPS = [
+    'crispy_forms',
     'modelcluster',
     'taggit',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + WAGTAIL_APPS + MISC_APPS
+INSTALLED_APPS = DJANGO_APPS + WAGTAIL_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',

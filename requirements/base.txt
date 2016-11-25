@@ -1,0 +1,12 @@
+# Bleeding edge Django
+django==1.10.3
+
+# Configuration
+django-environ==0.4.1
+whitenoise==3.2.2
+
+# WagTail
+wagtail==1.7
+
+#Crispy Forms
+django-crispy-forms==1.6.1
