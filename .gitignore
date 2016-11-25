@@ -1,0 +1,29 @@
+# Basics
+*.py[cod]
+__pycache__
+
+# Logs
+logs
+*.log
+pip-log.txt
+npm-debug.log*
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+
+# Pycharm
+.idea/*
+
+# npm
+node_modules/
+
+# virtual environments
+.env
+
+# User-uploaded media
+telefonia_wagtail/media/
+
+staticfiles/
