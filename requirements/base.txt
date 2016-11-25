@@ -8,5 +8,16 @@ whitenoise==3.2.2
 # WagTail
 wagtail==1.7
 
-#Crispy Forms
+#Formularios
 django-crispy-forms==1.6.1
+django-braces==1.10.0
+
+# Registro usuarios
+django-allauth==0.29.0
+
+# Unicode slugification
+awesome-slugify==1.6.5
+
+# Redis support
+django-redis==4.6.0
+redis>=2.10.5
