@@ -46,8 +46,7 @@ WAGTAIL_APPS = [
 ]
 
 LOCAL_APPS = [
-    'telefonia_wagtail.home',
-    'telefonia_wagtail.search',    
+    'telefonia_wagtail',
 ]
 
 THIRD_PARTY_APPS = [
