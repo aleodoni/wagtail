@@ -45,14 +45,18 @@ WAGTAIL_APPS = [
     'wagtail.wagtailcore',
 ]
 
-MISC_APPS = [
+LOCAL_APPS = [
     'telefonia_wagtail.home',
-    'telefonia_wagtail.search',
+    'telefonia_wagtail.search',    
+]
+
+THIRD_PARTY_APPS = [
+    'crispy_forms',
     'modelcluster',
     'taggit',
 ]
 
-INSTALLED_APPS = DJANGO_APPS + WAGTAIL_APPS + MISC_APPS
+INSTALLED_APPS = DJANGO_APPS + WAGTAIL_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -233,7 +237,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('SQLITE_URL', default='sqlite:////tmp/my-tmp-sqlite.db')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'telefonia_wagtail',
+    }
 }
 
 # Wagtail settings
