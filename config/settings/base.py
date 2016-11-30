@@ -237,7 +237,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('SQLITE_URL', default='sqlite:////tmp/my-tmp-sqlite.db')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'telefonia_wagtail',
+    }
 }
 
 # Wagtail settings
